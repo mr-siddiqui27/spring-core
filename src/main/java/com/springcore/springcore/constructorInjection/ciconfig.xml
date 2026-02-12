@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">  
+ <!--       
+       <bean class="com.springcore.springcore.constructorInjection.Address" name="add1" >
+       		<constructor-arg value="Lucknow" />		
+       </bean> 
+       
+       <bean class="com.springcore.springcore.constructorInjection.Person" name="person1">
+       		<constructor-arg value="Mojammil Husain" />
+       		<constructor-arg value="22" type="int"/>      type is optional
+       		<constructor-arg  ref="add1" />
+       		
+       </bean> -->
+       
+       <!-- using c tag -->
+       
+       
+       <bean class="com.springcore.springcore.constructorInjection.Address" name="add1" c:add="Lucknow" />
+       
+       <bean class="com.springcore.springcore.constructorInjection.Person" name="person1" c:name="Mojammil" c:age="22" c:add-ref="add1"/> 
+       		
+       		
+       		
+       		
+       		
+       	<!-- Ambiguity problem -->
+       	
+       	<bean class="com.springcore.springcore.constructorInjection.Addition" name="addition1" >
+       			<constructor-arg value="10" />    <!-- by default string -->
+       			<constructor-arg value="20" />		<!-- by default string -->
+       			
+       			
+       			<!-- first will check if there any constructor with parameter type( String String ) if yes then it call that constructor
+       			other wise it call the top most constructor by converting that parameter type
+       			
+       			
+       			if you want to change the order of parameters then use index
+       			<constructor-arg value="10" index="1"/>  
+       			<constructor-arg value="10" index="0"/>
+       			
+       			 -->
+       			
+       	</bean>
+       	
+       		
+
+</beans>

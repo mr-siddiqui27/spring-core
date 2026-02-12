@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">  
+       
+       <bean class="com.springcore.springcore.reference.B" name="bref">
+       		<property name="y" value="90"/> 
+       </bean>
+       
+<!--        <bean class="com.springcore.springcore.reference.A" name="aref">
+       		<property name="x" value="70"/> 
+       		
+       		
+       		 <property name="obj">
+       			<ref bean="bref" />
+       		</property>
+       		
+       		2nd way for reference
+       		<property name="obj" ref="bref" />
+       </bean>
+     -->
+     
+     <!-- 3rd way for ref -->
+     
+     <bean class="com.springcore.springcore.reference.A" name="aref" p:x="60" p:obj-ref="bref" />
+       		
+
+</beans>
