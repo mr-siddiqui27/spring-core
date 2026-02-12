@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">  
+       
+       
+       <!-- First bean -->
+       <bean class="com.springcore.springcore.Student" name="student1">
+       		
+       		<!-- property is used to set value -->
+       		<property name="id">
+       			<value>123</value>
+       		</property>
+       		
+       		<property name="name">
+       			<value>Mojammil Husain</value>
+       		</property>
+       		
+       		<property name="address">
+       			<value>Lucknow, UP, India</value>
+       		</property>
+       		
+       </bean>     
+       
+       
+       <!--Second bean
+        Second way to assign value
+       		value as attribute
+        -->
+       <bean class="com.springcore.springcore.Student" name="student2">
+       		<property name="id" value="124" />
+       		<property name="name" value="Kaif Khan" />
+       		<property name="address" value="Lucknow" />
+       </bean>    
+       
+       
+       <!-- Third way to assign value
+       using p schema     :-        xmlns:p="http://www.springframework.org/schema/p"
+       
+        -->    
+        <bean class="com.springcore.springcore.Student" name="student3" p:id="125" p:name="Jishan" p:address="Behraich"/>
+        
+        
+        
+       		
+
+</beans>
