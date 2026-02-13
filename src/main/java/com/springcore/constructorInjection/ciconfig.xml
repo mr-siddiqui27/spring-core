@@ -9,11 +9,11 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">  
  <!--       
-       <bean class="com.springcore.springcore.constructorInjection.Address" name="add1" >
+       <bean class="com.springcore.constructorInjection.Address" name="add1" >
        		<constructor-arg value="Lucknow" />		
        </bean> 
        
-       <bean class="com.springcore.springcore.constructorInjection.Person" name="person1">
+       <bean class="com.springcore.constructorInjection.Person" name="person1">
        		<constructor-arg value="Mojammil Husain" />
        		<constructor-arg value="22" type="int"/>      type is optional
        		<constructor-arg  ref="add1" />
@@ -23,9 +23,9 @@
        <!-- using c tag -->
        
        
-       <bean class="com.springcore.springcore.constructorInjection.Address" name="add1" c:add="Lucknow" />
+       <bean class="com.springcore.constructorInjection.Address" name="add1" c:add="Lucknow" />
        
-       <bean class="com.springcore.springcore.constructorInjection.Person" name="person1" c:name="Mojammil" c:age="22" c:add-ref="add1"/> 
+       <bean class="com.springcore.constructorInjection.Person" name="person1" c:name="Mojammil" c:age="22" c:add-ref="add1"/> 
        		
        		
        		
@@ -33,7 +33,7 @@
        		
        	<!-- Ambiguity problem -->
        	
-       	<bean class="com.springcore.springcore.constructorInjection.Addition" name="addition1" >
+       	<bean class="com.springcore.constructorInjection.Addition" name="addition1" >
        			<constructor-arg value="10" />    <!-- by default string -->
        			<constructor-arg value="20" />		<!-- by default string -->
        			

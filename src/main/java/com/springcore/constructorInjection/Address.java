@@ -1,4 +1,4 @@
-package com.springcore.springcore.constructorInjection;
+package com.springcore.constructorInjection;
 
 public class Address {
 	String address;

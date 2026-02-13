@@ -1,4 +1,4 @@
-package com.springcore.springcore;
+package com.springcore;
 
 public class Student {
 

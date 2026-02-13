@@ -1,4 +1,4 @@
-package com.springcore.springcore.constructorInjection;
+package com.springcore.constructorInjection;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -7,7 +7,7 @@ public class TestPerson {
 	
 	public static void main(String[] args) {
 		
-		ApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/springcore/constructorInjection/ciconfig.xml");
+		ApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/constructorInjection/ciconfig.xml");
 		Person p1 = (Person) context.getBean("person1");
 		System.out.println(p1);
 		System.out.println(p1.add.address);

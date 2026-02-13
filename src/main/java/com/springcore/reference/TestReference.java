@@ -1,4 +1,4 @@
-package com.springcore.springcore.reference;
+package com.springcore.reference;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -9,7 +9,7 @@ public class TestReference {
 //		Injecting reference type
 		
 		
-		ApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/springcore/reference/refconfig.xml");
+		ApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/reference/refconfig.xml");
 		A obj = (A) context.getBean("aref");
 		System.out.println(obj);
 		System.out.println(obj.getObj().getY());

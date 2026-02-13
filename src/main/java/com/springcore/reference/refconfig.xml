@@ -8,11 +8,11 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">  
        
-       <bean class="com.springcore.springcore.reference.B" name="bref">
+       <bean class="com.springcore.reference.B" name="bref">
        		<property name="y" value="90"/> 
        </bean>
        
-<!--        <bean class="com.springcore.springcore.reference.A" name="aref">
+<!--        <bean class="com.springcore.reference.A" name="aref">
        		<property name="x" value="70"/> 
        		
        		
@@ -27,7 +27,7 @@
      
      <!-- 3rd way for ref -->
      
-     <bean class="com.springcore.springcore.reference.A" name="aref" p:x="60" p:obj-ref="bref" />
+     <bean class="com.springcore.reference.A" name="aref" p:x="60" p:obj-ref="bref" />
        		
 
 </beans>

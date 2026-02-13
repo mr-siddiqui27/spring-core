@@ -10,7 +10,7 @@
        
        
        <!-- First bean -->
-       <bean class="com.springcore.springcore.Student" name="student1">
+       <bean class="com.springcore.Student" name="student1">
        		
        		<!-- property is used to set value -->
        		<property name="id">
@@ -32,7 +32,7 @@
         Second way to assign value
        		value as attribute
         -->
-       <bean class="com.springcore.springcore.Student" name="student2">
+       <bean class="com.springcore.Student" name="student2">
        		<property name="id" value="124" />
        		<property name="name" value="Kaif Khan" />
        		<property name="address" value="Lucknow" />
@@ -43,7 +43,7 @@
        using p schema     :-        xmlns:p="http://www.springframework.org/schema/p"
        
         -->    
-        <bean class="com.springcore.springcore.Student" name="student3" p:id="125" p:name="Jishan" p:address="Behraich"/>
+        <bean class="com.springcore.Student" name="student3" p:id="125" p:name="Jishan" p:address="Behraich"/>
         
         
         

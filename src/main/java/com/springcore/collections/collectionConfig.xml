@@ -10,7 +10,7 @@
        
        
         <!-- Inject Collection Type -->
-        <bean class="com.springcore.springcore.collections.Employee" name="employee1">
+        <bean class="com.springcore.collections.Employee" name="employee1">
         
         	<property name="name" value="Mojammil Husain"/>
         

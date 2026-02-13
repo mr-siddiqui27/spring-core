@@ -1,4 +1,4 @@
-package com.springcore.springcore.reference;
+package com.springcore.reference;
 
 public class A {
 	private int x;
